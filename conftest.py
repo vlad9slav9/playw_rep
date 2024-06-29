@@ -1,13 +1,11 @@
 import pytest
 
-
 @pytest.fixture(scope="session")
-def browser_context_args(browser_context_args):
-    return {
+def browser(playwright):
+    # Укажите путь к исполняемому файлу Яндекс.Браузера
+    yandex_browser_path = "C:\\Users\\KSK-SHOP\\AppData\\Local\\Yandex\\YandexBrowser\\Application\\browser.exe"  # Замените на реальный путь
 
-        "viewport": {
+    browser = playwright.chromium.launch(executable_path=yandex_browser_path, headless=False)
 
-            "width": 1920,
-            "height": 1080,
-        }
-    }
+    yield browser
+    browser.close()
