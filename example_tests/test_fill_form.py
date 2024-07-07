@@ -6,6 +6,8 @@ def test_todo(page):
     page.goto("https://demo.playwright.dev/todomvc/#/")
     expect(page).to_have_url("https://demo.playwright.dev/todomvc/#/")
 
+    page.pause()
+
     input_field = page.get_by_placeholder('What needs to be done?')
     expect(input_field).to_be_empty()
 
@@ -14,6 +16,7 @@ def test_todo(page):
 
     input_field.fill('Добавить в резюме, что умею программировать')
     input_field.press('Enter')
+
 
     todo_item = page.get_by_test_id('todo-item')
     expect(todo_item).to_have_count(2)

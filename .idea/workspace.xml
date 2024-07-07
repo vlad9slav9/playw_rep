@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="039e0b18-c2aa-4b9c-a9b8-49bdd142497a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_06_2024_13_37__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_06_2024_13_37__Changes_.xml" afterDir="false" />
+    <list default="true" id="039e0b18-c2aa-4b9c-a9b8-49bdd142497a" name="Changes" comment="add full test fill form">
+      <change afterPath="$PROJECT_DIR$/pages/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/dashboard_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_06_2024_13_37_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_06_2024_13_37__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_fill_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_fill_form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_todo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/example_tests/test_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_fill_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/example_tests/test_fill_form.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +69,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ASUS\PycharmProjects\playw_rep" />
+      <recent name="C:\Users\ASUS\PycharmProjects\playw_rep\example_tests" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -83,6 +88,28 @@
       <option name="presentableId" value="Default" />
       <updated>1719250314220</updated>
     </task>
+    <task id="LOCAL-00001" summary="add conftest and locators">
+      <option name="closed" value="true" />
+      <created>1719774238053</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719774238053</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add full test fill form">
+      <option name="closed" value="true" />
+      <created>1719774337960</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719774337960</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add conftest and locators" />
+    <MESSAGE value="add full test fill form" />
+    <option name="LAST_COMMIT_MESSAGE" value="add full test fill form" />
   </component>
 </project>
