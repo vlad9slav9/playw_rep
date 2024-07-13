@@ -1,7 +1,10 @@
 import time
 
+import pytest
+
 from pages.login_page import LoginPage
 from pages.dashboard_page import DashboardPage
+
 
 def test_login_failure(page):
     login_page = LoginPage(page)
@@ -10,11 +13,10 @@ def test_login_failure(page):
 
     assert login_page.get_error_message() == 'Invalid credentials. Please try again.'
 
-def test_login_success(page):
-    login_page = LoginPage(page)
-    dashboard_page = DashboardPage(page)
 
+@pytest.mark.parametrize('username, password', [('user', 'user'), ('admin', 'admin')])
+def test_login_success(login_page, dashboard_page, username, password):
     login_page.navigate()
-    login_page.login('admin', 'admin')
+    login_page.login(username, password)
 
-    dashboard_page.assert_welcome_message('Welcome admin')
+    dashboard_page.assert_welcome_message(f'Welcome {username}')
